@@ -73,7 +73,7 @@ public class KDeliveryApplication {
 
 		Shop s = new Shop(shopName);
 		s.addFood(0, foodName, price);
-		shops[shopIdx++] = s;
+		shops[shopIdx++] = s;	// shopIdx +=1
 
 		System.out.println(">> Registration is completed");
 		
