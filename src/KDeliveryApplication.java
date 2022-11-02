@@ -1,6 +1,13 @@
 import java.util.Scanner;
 
 public class KDeliveryApplication {
+	private static int SHOP_MAX = 10;
+	private static int ORDER_MAX = 20;
+	private static int FEEDBACK_MAX = ORDER_MAX;
+
+	private Shop[] shops;
+	private Order[] orders;
+	private Feedback[] feedbacks;
 
 	private final Scanner scan;
 
@@ -10,6 +17,9 @@ public class KDeliveryApplication {
 	}
 
 	private void initValues() {
+		shops = new Shop[SHOP_MAX];
+		orders = new Order[ORDER_MAX];
+		feedbacks = new Feedback[FEEDBACK_MAX];
 	}
 
 	public static void main(String[] args) {
